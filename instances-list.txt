@@ -1,0 +1,12 @@
+## This is an example of specifying a list of instances.
+
+# Each line is an instance relative to trainInstancesDir/testInstancesdir
+# unless set to "" (see scenario.txt.tmpl) and an optional sequence of
+# instance-specific parameters that will be passed to target-runner when
+# invoked on that instance.
+
+# Empty lines and comments are ignored.
+
+--prob ZDT1 --id 1 --obj 2 --rp 0.5,0.5 --generations 100 --epsilonValue 0.001
+--prob ZDT2 --id 2 --obj 2 --rp 0.5,0.5 --generations 100 --epsilonValue 0.001
+
