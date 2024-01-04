@@ -6,7 +6,36 @@
 # invoked on that instance.
 
 # Empty lines and comments are ignored.
-
---prob ZDT1 --id 1 --obj 2 --rp 0.5,0.5 --generations 100 --epsilonValue 0.001
---prob ZDT2 --id 2 --obj 2 --rp 0.5,0.5 --generations 100 --epsilonValue 0.001
-
+#non-dominated point
+#3 objectives
+--prob DTLZ1 --id 4 --obj 3 --var 7  --rp 0.05,0.05,0.2 --generations 400 --epsilonValue 0.01
+--prob DTLZ2 --id 5 --obj 3 --var 12 --rp 0.2,0.5,0.6 --generations 400 --epsilonValue 0.01
+--prob DTLZ3 --id 5 --obj 3 --var 12 --rp 0.2,0.5,0.6 --generations 400 --epsilonValue 0.01
+--prob DTLZ4 --id 5 --obj 3 --var 12 --rp 0.2,0.5,0.6 --generations 400 --epsilonValue 0.01
+--prob DTLZ5 --id 6 --obj 3 --var 12 --rp 0.1,0.3,0.5 --generations 400 --epsilonValue 0.01
+--prob DTLZ6 --id 6 --obj 3 --var 12 --rp 0.1,0.3,0.5 --generations 400 --epsilonValue 0.01
+--prob DTLZ7 --id 7 --obj 3 --var 22 --rp 0.165,0.71,4.678 --generations 400 --epsilonValue 0.01
+#5 objectives 
+--prob DTLZ1 --id 4 --obj 5 --var 9  --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ2 --id 5 --obj 5 --var 14 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ3 --id 5 --obj 5 --var 14 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ4 --id 5 --obj 5 --var 14 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ5 --id 6 --obj 5 --var 14 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ6 --id 6 --obj 5 --var 14 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ7 --id 7 --obj 5 --var 24 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+#7 objectives
+--prob DTLZ1 --id 4 --obj 7 --var 11 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+--prob DTLZ2 --id 5 --obj 7 --var 16 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+--prob DTLZ3 --id 5 --obj 7 --var 16 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+--prob DTLZ4 --id 5 --obj 7 --var 16 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+--prob DTLZ5 --id 6 --obj 7 --var 16 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+--prob DTLZ6 --id 6 --obj 7 --var 16 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+--prob DTLZ7 --id 7 --obj 7 --var 26 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --epsilonValue 0.01
+#9 objectives
+--prob DTLZ1 --id 4 --obj 9 --var 13 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
+--prob DTLZ2 --id 5 --obj 9 --var 18 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
+--prob DTLZ3 --id 5 --obj 9 --var 18 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
+--prob DTLZ4 --id 5 --obj 9 --var 18 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
+--prob DTLZ5 --id 6 --obj 9 --var 18 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
+--prob DTLZ6 --id 6 --obj 9 --var 18 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
+--prob DTLZ7 --id 7 --obj 9 --var 28 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 1000 --epsilonValue 0.01
