@@ -7,10 +7,10 @@
 
 # Empty lines and comments are ignored.
 #5 objectives 
---prob DTLZ1 --id 4 --obj 5 --var 9  --rp 0.05,0.05,0.05,0.05,0.2 --generations 600 --epsilonValue 0.01
---prob DTLZ2 --id 5 --obj 5 --var 14 --rp 0.2,0.5,0.5,0.2,0.6 --generations 600 --epsilonValue 0.01
---prob DTLZ3 --id 5 --obj 5 --var 14 --rp 0.2,0.5,0.5,0.2,0.6 --generations 600 --epsilonValue 0.01
---prob DTLZ4 --id 5 --obj 5 --var 14 --rp 0.2,0.5,0.5,0.2,0.6 --generations 600 --epsilonValue 0.01
---prob DTLZ5 --id 6 --obj 5 --var 14 --rp 0.1,0.3,0.2,0.4,0.5 --generations 600 --epsilonValue 0.01
---prob DTLZ6 --id 6 --obj 5 --var 14 --rp 0.1,0.3,0.2,0.4,0.5 --generations 600 --epsilonValue 0.01
-#--prob DTLZ7 --id 7 --obj 5 --var 24 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --epsilonValue 0.01
+--prob DTLZ1 --id 4 --obj 5 --var 9  --rp 0.05,0.05,0.05,0.05,0.2 --generations 600 --mu 0.05
+--prob DTLZ2 --id 5 --obj 5 --var 14 --rp 0.2,0.5,0.5,0.2,0.6 --generations 600 --mu 0.05
+--prob DTLZ3 --id 5 --obj 5 --var 14 --rp 0.2,0.5,0.5,0.2,0.6 --generations 600 --mu 0.05
+--prob DTLZ4 --id 5 --obj 5 --var 14 --rp 0.2,0.5,0.5,0.2,0.6 --generations 600 --mu 0.05
+--prob DTLZ5 --id 6 --obj 5 --var 14 --rp 0.1,0.3,0.2,0.4,0.5 --generations 600 --mu 0.05
+--prob DTLZ6 --id 6 --obj 5 --var 14 --rp 0.1,0.3,0.2,0.4,0.5 --generations 600 --mu 0.05
+#--prob DTLZ7 --id 7 --obj 5 --var 24 --rp 0.5,0.5,0.5,0.5,0.5 --generations 600 --mu 0.05

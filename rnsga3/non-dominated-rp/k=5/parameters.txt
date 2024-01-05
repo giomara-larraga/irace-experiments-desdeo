@@ -42,5 +42,3 @@ uniformMutationPerturbation "--uniformMutationPerturbation " r (0.0, 1.0) | muta
 #
 selection "--selection " c (random,tournament)
 selectionTournamentSize "--selectionTournamentSize " i (2, 10) | selection %in% c("tournament")
-normalization "--normalization " c (ever,front,no)
-extremeAsReference "--extremeAsReference " c (True,False)

@@ -34,7 +34,7 @@ CONFIG_PARAMS=$*
 # BINDIR=$(dirname "$(readlink -f "$(type -P $0 || echo $0)")")
 
 # EDIT THIS: Path to your executable
-EXE=~/WCCI2024/desdeo-emo/wrappers/main_rnsga2.py
+EXE=~/WCCI2024/desdeo-emo/wrappers/main_rnsga3.py
 # EDIT THIS: Specify how parameters are given to your executable
 EXE_PARAMS="--seed ${SEED} ${INSTANCE} ${CONFIG_PARAMS}"
 
