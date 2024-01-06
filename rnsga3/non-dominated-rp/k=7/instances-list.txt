@@ -6,10 +6,10 @@
 # invoked on that instance.
 
 # Empty lines and comments are ignored.
---prob DTLZ1 --id 4 --obj 7 --var 11 --rp 0.05,0.05,0.05,0.05,0.05,0.05,0.2 --generations 800 --mu 0.01
---prob DTLZ2 --id 5 --obj 7 --var 16 --rp 0.2,0.5,0.5,0.2,0.2,0.5,0.6 --generations 800 --mu 0.01
---prob DTLZ3 --id 5 --obj 7 --var 16 --rp 0.2,0.5,0.5,0.2,0.2,0.5,0.6 --generations 800 --mu 0.01
---prob DTLZ4 --id 5 --obj 7 --var 16 --rp 0.2,0.5,0.5,0.2,0.2,0.5,0.6 --generations 800 --mu 0.01
---prob DTLZ5 --id 6 --obj 7 --var 16 --rp 0.1,0.3,0.1,0.1,0.2,0.4,0.5 --generations 800 --mu 0.01
---prob DTLZ6 --id 6 --obj 7 --var 16 --rp 0.1,0.3,0.1,0.1,0.2,0.4,0.5 --generations 800 --mu 0.01
-#--prob DTLZ7 --id 7 --obj 7 --var 26 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --mu 0.01
+--prob DTLZ1 --id 4 --obj 7 --var 11 --rp 0.05,0.05,0.05,0.05,0.05,0.05,0.2 --generations 800 --mu 0.05
+--prob DTLZ2 --id 5 --obj 7 --var 16 --rp 0.2,0.5,0.5,0.2,0.2,0.5,0.6 --generations 800 --mu 0.05
+--prob DTLZ3 --id 5 --obj 7 --var 16 --rp 0.2,0.5,0.5,0.2,0.2,0.5,0.6 --generations 800 --mu 0.05
+--prob DTLZ4 --id 5 --obj 7 --var 16 --rp 0.2,0.5,0.5,0.2,0.2,0.5,0.6 --generations 800 --mu 0.05
+--prob DTLZ5 --id 6 --obj 7 --var 16 --rp 0.1,0.3,0.1,0.1,0.2,0.4,0.5 --generations 800 --mu 0.05
+--prob DTLZ6 --id 6 --obj 7 --var 16 --rp 0.1,0.3,0.1,0.1,0.2,0.4,0.5 --generations 800 --mu 0.05
+#--prob DTLZ7 --id 7 --obj 7 --var 26 --rp 0.5,0.5,0.5,0.5,0.5,0.5,0.5 --generations 800 --mu 0.05
