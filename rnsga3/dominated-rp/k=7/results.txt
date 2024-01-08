@@ -1,0 +1,293 @@
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.5.6863679
+# Copyright (C) 2010-2020
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste  
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: /home/giomara/R/x86_64-pc-linux-gnu-library/4.1/irace
+# called with: --scenario scenario.txt
+# 2024-01-08 12:56:57 EET: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 12
+# seed: 1387894036
+# confidence level: 0.95
+# budget: 500
+# mu: 5
+# deterministic: FALSE
+
+# 2024-01-08 12:56:57 EET: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# remainingBudget: 500
+# currentBudget: 100
+# nbConfigurations: 16
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          1|         16|          2|    0.4437832436|         16|00:06:49|   NA|  NA|    NA|
+|x|          2|         16|          2|    0.9578383374|         32|00:08:10|+0.83|0.91|0.1775|
+|x|          3|         16|         16|    0.7000626667|         48|00:08:31|+0.54|0.69|0.4677|
+|x|          4|         16|         16|    0.8158470628|         64|00:08:22|+0.54|0.66|0.5119|
+|-|          5|          3|         16|    0.7040668410|         80|00:07:25|+0.10|0.28|0.5220|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          16    mean value:     0.7040668410
+Description of the best-so-far configuration:
+   .ID. crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize .PARENT.
+16   16       SBX  uniform tournament                0.585                  random                       390.927                          NA              0.1086                 bounds                                  NA                      0.8359                       4       NA
+
+# 2024-01-08 13:36:17 EET: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover   mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+16       SBX    uniform tournament               0.5850                  random                      390.9270                          NA              0.1086                 bounds                                  NA                      0.8359                       4
+15       SBX    uniform tournament               0.2572                   round                      226.4641                          NA              0.1860                  round                                  NA                      0.3063                       4
+7        SBX polynomial tournament               0.7471                   round                      269.7328                          NA              0.2681                  round                            138.8907                          NA                       7
+# 2024-01-08 13:36:17 EET: Iteration 2 of 5
+# experimentsUsedSoFar: 80
+# remainingBudget: 420
+# currentBudget: 105
+# nbConfigurations: 17
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          6|         17|         19|     1.075388782|         17|00:08:28|   NA|  NA|    NA|
+|x|          1|         17|         19|    0.7673034209|         31|00:07:21|+0.40|0.70|0.5258|
+|x|          4|         17|         15|    0.9824868416|         45|00:07:12|+0.35|0.57|0.3678|
+|x|          5|         17|         28|    0.5868446228|         59|00:06:21|+0.31|0.48|0.3670|
+|-|          2|          6|         28|    0.7121087737|         73|00:07:03|+0.02|0.21|0.7787|
+|=|          3|          6|         28|    0.6719461508|         76|00:01:38|+0.11|0.26|0.6893|
+|=|          7|          6|         28|    0.6426291996|         82|00:02:58|+0.14|0.26|0.6334|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          28    mean value:     0.6426291996
+Description of the best-so-far configuration:
+   .ID. crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize .PARENT.
+28   28       SBX  uniform tournament               0.4215                  bounds                      102.1963                          NA              0.1188                 bounds                                  NA                      0.3797                       8       15
+
+# 2024-01-08 14:17:21 EET: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover   mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+28       SBX    uniform tournament               0.4215                  bounds                      102.1963                          NA              0.1188                 bounds                                  NA                      0.3797                       8
+16       SBX    uniform tournament               0.5850                  random                      390.9270                          NA              0.1086                 bounds                                  NA                      0.8359                       4
+19       SBX polynomial tournament               0.7393                  bounds                      359.7080                          NA              0.3957                 random                             99.8566                          NA                       5
+15       SBX    uniform tournament               0.2572                   round                      226.4641                          NA              0.1860                  round                                  NA                      0.3063                       4
+7        SBX polynomial tournament               0.7471                   round                      269.7328                          NA              0.2681                  round                            138.8907                          NA                       7
+# 2024-01-08 14:17:21 EET: Iteration 3 of 5
+# experimentsUsedSoFar: 162
+# remainingBudget: 338
+# currentBudget: 112
+# nbConfigurations: 18
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          8|         18|         28|    0.4929364046|         18|00:08:04|   NA|  NA|    NA|
+|x|          6|         18|         28|    0.7988836435|         31|00:05:36|+0.36|0.68|0.7257|
+|x|          2|         18|         28|    0.9369775548|         44|00:05:36|+0.27|0.51|0.8561|
+|x|          4|         18|         28|    0.8359204378|         57|00:05:41|+0.42|0.56|0.6974|
+|-|          3|          7|         28|    0.7629629574|         70|00:05:46|+0.22|0.37|0.6495|
+|-|          5|          6|         28|    0.6729026700|         72|00:00:52|+0.28|0.40|0.5278|
+|=|          1|          6|         28|    0.6463733299|         73|00:00:28|+0.06|0.20|0.6732|
+|=|          7|          6|         28|    0.6239176002|         74|00:00:27|+0.04|0.16|0.7716|
+|=|          9|          6|         28|    0.6064319168|         80|00:02:51|+0.09|0.19|0.7579|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          28    mean value:     0.6064319168
+Description of the best-so-far configuration:
+   .ID. crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize .PARENT.
+28   28       SBX  uniform tournament               0.4215                  bounds                      102.1963                          NA              0.1188                 bounds                                  NA                      0.3797                       8       15
+
+# 2024-01-08 14:52:48 EET: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover   mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+28       SBX    uniform tournament               0.4215                  bounds                      102.1963                          NA              0.1188                 bounds                                  NA                      0.3797                       8
+16       SBX    uniform tournament               0.5850                  random                      390.9270                          NA              0.1086                 bounds                                  NA                      0.8359                       4
+15       SBX    uniform tournament               0.2572                   round                      226.4641                          NA              0.1860                  round                                  NA                      0.3063                       4
+19       SBX polynomial tournament               0.7393                  bounds                      359.7080                          NA              0.3957                 random                             99.8566                          NA                       5
+35       SBX    uniform tournament               0.7817                  random                      248.5864                          NA              0.0793                  round                                  NA                      0.8106                       2
+# 2024-01-08 14:52:48 EET: Iteration 4 of 5
+# experimentsUsedSoFar: 242
+# remainingBudget: 258
+# currentBudget: 129
+# nbConfigurations: 17
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         10|         17|         44|     1.159965624|         17|00:07:50|   NA|  NA|    NA|
+|x|          4|         17|         44|    0.8375599320|         29|00:05:34|+0.53|0.76|0.6802|
+|x|          9|         17|         44|    0.7124072942|         41|00:05:38|+0.54|0.69|0.6891|
+|x|          2|         17|         44|    0.8268236810|         53|00:05:14|+0.54|0.66|0.5811|
+|-|          6|          9|         44|    0.8915136482|         65|00:04:38|+0.13|0.31|0.7816|
+|=|          1|          9|         44|    0.8235623990|         69|00:01:36|+0.05|0.21|0.7632|
+|=|          8|          9|         44|    0.7763930355|         73|00:01:28|+0.08|0.21|0.7827|
+|=|          5|          9|         44|    0.7107060576|         77|00:01:25|+0.10|0.21|0.7601|
+|=|          7|          9|         28|    0.6888553301|         81|00:01:39|+0.06|0.16|0.8260|
+|=|          3|          9|         28|    0.6670831007|         85|00:01:33|+0.00|0.10|0.8641|
+|=|         11|          9|         28|    0.6281039318|         94|00:03:05|+0.02|0.10|0.8599|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          28    mean value:     0.6281039318
+Description of the best-so-far configuration:
+   .ID. crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize .PARENT.
+28   28       SBX  uniform tournament               0.4215                  bounds                      102.1963                          NA              0.1188                 bounds                                  NA                      0.3797                       8       15
+
+# 2024-01-08 15:32:31 EET: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+28       SBX  uniform tournament               0.4215                  bounds                      102.1963                          NA              0.1188                 bounds                                  NA                      0.3797                       8
+53       SBX  uniform tournament               0.2950                  bounds                      130.0759                          NA              0.0387                 bounds                                  NA                      0.5702                       6
+44       SBX  uniform tournament               0.2450                   round                      137.1839                          NA              0.0869                  round                                  NA                      0.2699                       5
+16       SBX  uniform tournament               0.5850                  random                      390.9270                          NA              0.1086                 bounds                                  NA                      0.8359                       4
+50       SBX  uniform tournament               0.1458                  bounds                      327.1335                          NA              0.1799                 bounds                                  NA                      0.6091                       3
+# 2024-01-08 15:32:31 EET: Iteration 5 of 5
+# experimentsUsedSoFar: 336
+# remainingBudget: 164
+# currentBudget: 164
+# nbConfigurations: 18
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         12|         18|         57|     1.044318300|         18|00:06:42|   NA|  NA|    NA|
+|x|         11|         18|         59|    0.6579589929|         31|00:04:35|-0.17|0.41|0.7469|
+|x|          8|         18|         65|    0.6262616659|         44|00:05:05|+0.15|0.43|0.5474|
+|x|          4|         18|         65|    0.5894636062|         57|00:04:57|+0.36|0.52|0.4176|
+|-|          9|         12|         59|    0.5794425117|         70|00:05:00|-0.03|0.17|0.7861|
+|=|          5|         12|         59|    0.5240676926|         77|00:02:30|-0.02|0.15|0.7343|
+|=|         10|         12|         44|    0.6107141340|         84|00:02:42|-0.02|0.12|0.8422|
+|=|          2|         12|         44|    0.6806339725|         91|00:02:35|+0.00|0.13|0.8670|
+|=|          7|         12|         68|    0.7017290954|         98|00:02:36|+0.02|0.13|0.8887|
+|=|          3|         12|         59|    0.6495629351|        105|00:02:40|+0.03|0.12|0.8796|
+|=|          1|         12|         59|    0.6319449641|        112|00:02:29|+0.00|0.09|0.9035|
+|=|          6|         12|         59|    0.6735288650|        119|00:02:48|+0.01|0.10|0.8911|
+|=|         13|         12|         59|    0.6410793638|        131|00:04:05|+0.01|0.09|0.8639|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          59    mean value:     0.6410793638
+Description of the best-so-far configuration:
+   .ID. crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize .PARENT.
+59   59       SBX  uniform tournament               0.0741                   round                      136.7326                          NA              0.0205                  round                                  NA                      0.5571                       3       44
+
+# 2024-01-08 16:21:23 EET: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+59       SBX  uniform tournament               0.0741                   round                      136.7326                          NA              0.0205                  round                                  NA                      0.5571                       3
+65       SBX  uniform tournament               0.1870                   round                       98.8064                          NA              0.0557                  round                                  NA                      0.3368                       2
+44       SBX  uniform tournament               0.2450                   round                      137.1839                          NA              0.0869                  round                                  NA                      0.2699                       5
+60       SBX  uniform tournament               0.0547                  bounds                      300.4929                          NA              0.1938                 bounds                                  NA                      0.6113                       5
+68       SBX  uniform tournament               0.4019                  bounds                       56.2400                          NA              0.1473                 bounds                                  NA                      0.5898                       6
+# 2024-01-08 16:21:23 EET: Iteration 6 of 6
+# experimentsUsedSoFar: 467
+# remainingBudget: 33
+# currentBudget: 33
+# nbConfigurations: 7
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         14|          7|         65|    0.4685553443|          7|00:02:46|   NA|  NA|    NA|
+|x|         10|          7|         65|    0.8255781832|          9|00:00:45|+0.14|0.57|0.9798|
+|x|          4|          7|         65|    0.7100752644|         11|00:00:45|+0.43|0.62|0.6594|
+|x|          1|          7|         65|    0.6484678001|         13|00:00:46|+0.43|0.57|0.6647|
+|-|          6|          6|         65|    0.7509224104|         15|00:00:46|+0.10|0.28|0.8636|
+|=|         12|          6|         59|    0.8392604358|         16|00:00:21|+0.15|0.29|0.8044|
+|!|          3|          6|         59|    0.7876544050|         17|00:00:22|+0.24|0.34|0.7548|
+|=|          5|          6|         59|    0.7200968040|         18|00:00:23|+0.08|0.20|0.8713|
+|=|          2|          6|         59|    0.7603670706|         19|00:00:20|+0.08|0.19|0.8799|
+|=|         11|          6|         59|    0.7086948863|         20|00:00:18|-0.00|0.10|0.9070|
+|=|         13|          6|         59|    0.6671485648|         21|00:00:16|-0.04|0.05|0.9103|
+|=|          9|          6|         59|    0.6501563187|         22|00:00:19|-0.03|0.05|0.9008|
+|=|          7|          6|         59|    0.6343477993|         23|00:00:17|-0.02|0.06|0.8923|
+|=|          8|          6|         59|    0.6340418796|         24|00:00:17|-0.02|0.06|0.8827|
+|=|         15|          6|         59|    0.6228516763|         30|00:02:00|-0.00|0.06|0.8738|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          59    mean value:     0.6228516763
+Description of the best-so-far configuration:
+   .ID. crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize .PARENT.
+59   59       SBX  uniform tournament               0.0741                   round                      136.7326                          NA              0.0205                  round                                  NA                      0.5571                       3       44
+
+# 2024-01-08 16:32:12 EET: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+59       SBX  uniform tournament               0.0741                   round                      136.7326                          NA              0.0205                  round                                  NA                      0.5571                       3
+65       SBX  uniform tournament               0.1870                   round                       98.8064                          NA              0.0557                  round                                  NA                      0.3368                       2
+44       SBX  uniform tournament               0.2450                   round                      137.1839                          NA              0.0869                  round                                  NA                      0.2699                       5
+60       SBX  uniform tournament               0.0547                  bounds                      300.4929                          NA              0.1938                 bounds                                  NA                      0.6113                       5
+68       SBX  uniform tournament               0.4019                  bounds                       56.2400                          NA              0.1473                 bounds                                  NA                      0.5898                       6
+# 2024-01-08 16:32:12 EET: Stopped because there is not enough budget left to race more than the minimum (5)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 7
+# nbIterations: 7
+# experimentsUsedSoFar: 497
+# timeUsed: 0
+# remainingBudget: 3
+# currentBudget: 3
+# number of elites: 5
+# nbConfigurations: 4
+# Total CPU user time: 12503.89, CPU sys time: 250.75, Wall-clock time: 12915.32
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   crossover mutation  selection crossoverProbability crossoverRepairStrategy sbxCrossoverDistributionIndex blxAlphaCrossoverAlphaValue mutationProbability mutationRepairStrategy polynomialMutationDistributionIndex uniformMutationPerturbation selectionTournamentSize
+59       SBX  uniform tournament               0.0741                   round                      136.7326                          NA              0.0205                  round                                  NA                      0.5571                       3
+65       SBX  uniform tournament               0.1870                   round                       98.8064                          NA              0.0557                  round                                  NA                      0.3368                       2
+44       SBX  uniform tournament               0.2450                   round                      137.1839                          NA              0.0869                  round                                  NA                      0.2699                       5
+60       SBX  uniform tournament               0.0547                  bounds                      300.4929                          NA              0.1938                 bounds                                  NA                      0.6113                       5
+68       SBX  uniform tournament               0.4019                  bounds                       56.2400                          NA              0.1473                 bounds                                  NA                      0.5898                       6
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+59  --crossover SBX --crossoverProbability 0.0741 --crossoverRepairStrategy round --sbxCrossoverDistributionIndex 136.7326 --mutation uniform --mutationProbability 0.0205 --mutationRepairStrategy round --uniformMutationPerturbation 0.5571 --selection tournament --selectionTournamentSize 3
+65  --crossover SBX --crossoverProbability 0.187 --crossoverRepairStrategy round --sbxCrossoverDistributionIndex 98.8064 --mutation uniform --mutationProbability 0.0557 --mutationRepairStrategy round --uniformMutationPerturbation 0.3368 --selection tournament --selectionTournamentSize 2
+44  --crossover SBX --crossoverProbability 0.245 --crossoverRepairStrategy round --sbxCrossoverDistributionIndex 137.1839 --mutation uniform --mutationProbability 0.0869 --mutationRepairStrategy round --uniformMutationPerturbation 0.2699 --selection tournament --selectionTournamentSize 5
+60  --crossover SBX --crossoverProbability 0.0547 --crossoverRepairStrategy bounds --sbxCrossoverDistributionIndex 300.4929 --mutation uniform --mutationProbability 0.1938 --mutationRepairStrategy bounds --uniformMutationPerturbation 0.6113 --selection tournament --selectionTournamentSize 5
+68  --crossover SBX --crossoverProbability 0.4019 --crossoverRepairStrategy bounds --sbxCrossoverDistributionIndex 56.24 --mutation uniform --mutationProbability 0.1473 --mutationRepairStrategy bounds --uniformMutationPerturbation 0.5898 --selection tournament --selectionTournamentSize 6
+
+
+# Testing of elite configurations: 1 
+# Testing iteration configurations: FALSE 
+# 2024-01-08 16:32:12 EET: No test instances, skip testing
+
