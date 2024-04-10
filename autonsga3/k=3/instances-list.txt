@@ -14,4 +14,12 @@
 --prob DTLZ4 --id 5 --obj 3 --var 12 --generations 400 
 --prob DTLZ5 --id 6 --obj 3 --var 12 --generations 400 
 --prob DTLZ6 --id 6 --obj 3 --var 12 --generations 400 
-#--prob DTLZ7 --id 7 --obj 3 --var 22 --generations 400 
+--prob WFG1 --id 9 --obj 3 --var 14 --generations 400 
+--prob WFG2 --id 10 --obj 3 --var 14 --generations 400
+--prob WFG3 --id 11 --obj 3 --var 14 --generations 400
+--prob WFG4 --id 12 --obj 3 --var 14 --generations 400
+--prob WFG5 --id 13 --obj 3 --var 14 --generations 400
+--prob WFG6 --id 14 --obj 3 --var 14 --generations 400
+--prob WFG7 --id 15 --obj 3 --var 14 --generations 400
+--prob WFG8 --id 16 --obj 3 --var 14 --generations 400
+--prob WFG9 --id 17 --obj 3 --var 14 --generations 400

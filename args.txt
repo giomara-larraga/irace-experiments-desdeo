@@ -1,3 +1,5 @@
+source ../../../../venv/bin/activate
+
 export IRACE_HOME=/home/giomara/R/x86_64-pc-linux-gnu-library/4.1/irace/bin
 export PATH=${IRACE_HOME}:$PATH
 $IRACE_HOME/irace --scenario scenario.txt

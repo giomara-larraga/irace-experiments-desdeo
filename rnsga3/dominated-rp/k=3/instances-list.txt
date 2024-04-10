@@ -14,4 +14,14 @@
 --prob DTLZ4 --id 5 --obj 3 --var 12 --rp 0.7,0.8,0.5 --generations 400 --mu 0.1
 --prob DTLZ5 --id 6 --obj 3 --var 12 --rp 0.6,0.7,0.6 --generations 400 --mu 0.1
 --prob DTLZ6 --id 6 --obj 3 --var 12 --rp 0.6,0.7,0.6 --generations 400 --mu 0.1
-#--prob DTLZ7 --id 7 --obj 3 --var 22 --rp 0.75,0.15,6.0 --generations 400 --mu 0.1
+--prob WFG1 --id 9 --obj 3 --var 14 --rp 0.15375682,1.77951325,0.64890401 --generations 400 --mu 0.1
+--prob WFG2 --id 10 --obj 3 --var 14 --rp 0.14622299,0.34191758,0.74978728 --generations 400 --mu 0.1
+--prob WFG3 --id 11 --obj 3 --var 14 --rp 0.30092965,0.24627122,1.42768285 --generations 400 --mu 0.1
+--prob WFG4 --id 12 --obj 3 --var 14 --rp 1.06663281,1.55156518,1.78413639 --generations 400 --mu 0.1
+--prob WFG5 --id 13 --obj 3 --var 14 --rp 0.33864139,1.75842047,4.07356541 --generations 400 --mu 0.1
+--prob WFG6 --id 14 --obj 3 --var 14 --rp 0.92761334,1.144132,3.43439072 --generations 400 --mu 0.1
+--prob WFG7 --id 15 --obj 3 --var 14 --rp 0.5576288,1.62558508,4.81924167 --generations 400 --mu 0.1
+--prob WFG8 --id 16 --obj 3 --var 14 --rp 0.59253235,0.61381295,2.6696158 --generations 400 --mu 0.1
+--prob WFG9 --id 17 --obj 3 --var 14 --rp 0.35289168,2.86170828,2.58751479 --generations 400 --mu 0.1
+
+
