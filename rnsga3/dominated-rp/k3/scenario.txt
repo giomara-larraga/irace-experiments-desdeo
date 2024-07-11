@@ -11,7 +11,7 @@
 
 ## File that contains the description of the parameters of the target
 ## algorithm.
-# parameterFile = "./parameters.txt"
+parameterFile = "./parameters.txt"
 
 ## File that contains a list of logical expressions that cannot be TRUE for
 ## any evaluated configuration. If empty or NULL, do not use forbidden
@@ -70,11 +70,11 @@ trainInstancesFile = "instances-list.txt"
 
 ## Executable called for each configuration that executes the target algorithm
 ## to be tuned. See the templates and examples provided.
-targetRunner = "./target-runner"
+targetRunner = "./target-runner.bat"
 
 ## Executable that will be used to launch the target runner, when targetRunner
 ## cannot be executed directly (.e.g, a Python script in Windows).
-#targetRunnerLauncher = "/target-runner-acotsp.py"
+#targetRunnerLauncher = "python"
 
 ## Command-line arguments provided to targetRunnerLauncher. The substrings
 ## \{targetRunner\} and \{targetRunnerArgs\} will be replaced by the value of
